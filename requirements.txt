@@ -1,3 +1,7 @@
 numpy
 ipywidgets
 nbinteract
+plotly
+RISE
+appmode
+rise
