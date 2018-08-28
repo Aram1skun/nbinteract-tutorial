@@ -4,4 +4,4 @@ nbinteract
 plotly
 RISE
 appmode
-rise
+
