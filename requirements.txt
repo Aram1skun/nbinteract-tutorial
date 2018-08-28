@@ -4,4 +4,5 @@ nbinteract
 plotly
 RISE
 appmode
-
+matplotlib
+jupyter_contrib_nbextensions
