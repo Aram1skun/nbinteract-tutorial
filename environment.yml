@@ -2,3 +2,9 @@ channels:
   - conda-forge
 dependencies:
   - appmode
+  - python
+  - numpy
+  - matplotlib
+  - pandas
+  - bokeh
+  - rise
