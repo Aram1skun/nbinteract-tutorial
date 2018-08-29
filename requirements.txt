@@ -7,3 +7,4 @@ matplotlib
 jupyter_contrib_nbextensions
 scipy
 pandas
+sympy
