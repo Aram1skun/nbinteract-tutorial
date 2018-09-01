@@ -31,8 +31,8 @@ highcut = 50
 #Selection of the data te be use in the analysis (application of a fixed window over the excell data)
 #Note:Works independantly of the skiprows function in the reading of the excell
 #Note:Indexing begin at 0
-start=0
-end=60000
+start=10000
+end=12100
 N=end-start
 
 ########################################################
@@ -77,7 +77,7 @@ plt.show()
 #####################################################
 
 #Reading the filre with Pandas
-df=pd.read_csv("/Users/Cloutiern/Desktop/f.csv",skiprows=8,usecols=[2])
+df=pd.read_csv("a.csv",skiprows=8,usecols=[2])
 #Removing axis label from the Pandas dataframe to retain only the values
 data=df.values
 #Shaping the dataframe to obtain an 1D array
@@ -231,18 +231,18 @@ plt.plot(xd,d)
 plt.title('Temperature delta per cycle')
 plt.ylabel('Temperature delta')
 plt.xlabel('Cycle')
-#plt.axis([0,N/pf,0,0.005])
+plt.axis([0,N/pf,0,0.005])
 plt.show()
 
 #Illustration of the FFT of the temperature delta for each rotation of the tool
-xdfft = np.linspace(0.0, 1.0/(2.0/pf), (N/pf)/2)
-yd = scipy.fftpack.fft(d)
-plt.plot(xdfft,2.0/(N/pf) * np.abs(yd[:int(N/pf)//2]))
-plt.title('FFT of temperature difference per cycle')
-plt.ylabel('Density')
-plt.xlabel('Frequency')
-plt.yscale('linear')
-plt.xscale('linear')
+#xdfft = np.linspace(0.0, 1.0/(2.0/pf), (N/pf)/2)
+#yd = scipy.fftpack.fft(d)
+#plt.plot(xdfft,2.0/(N/pf) * np.abs(yd[:int(N/pf)//2]))
+#plt.title('FFT of temperature difference per cycle')
+#plt.ylabel('Density')
+#plt.xlabel('Frequency')
+#plt.yscale('linear')
+#plt.xscale('linear')
 #plt.axis([0,0,0,0])
-plt.show()
+#plt.show()
 
