@@ -10,5 +10,5 @@ dependencies:
   - rise
   - sympy
   - scipy
-  - nikola[extra]
+  - nikola[extras]
   
