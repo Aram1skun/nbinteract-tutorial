@@ -12,4 +12,6 @@ dependencies:
   - scipy
   - plotly
   - bqplot
+  - traitlets
+  
   
